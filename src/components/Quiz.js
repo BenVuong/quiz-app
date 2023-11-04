@@ -5,12 +5,21 @@ import "../App.css"
  function Quiz(){
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [optionChosen, setOptionChosen] = useState("")
-    const { score, setScore } = useContext(QuizContext);
+    const { score, setScore, setGameState } = useContext(QuizContext);
     const nextQuestion = () => {
         if (Questions[currentQuestion].answer == optionChosen)
         {
             setScore(score+1);
         }
+        setCurrentQuestion(currentQuestion+1)
+    }
+
+    const finishQuiz = () =>{
+        if (Questions[currentQuestion].answer == optionChosen)
+        {
+            setScore(score+1);
+        }
+        setGameState("endScreen");
     }
     return (
         
@@ -25,7 +34,14 @@ import "../App.css"
                 <button onClick={() => setOptionChosen("D")}> {Questions[currentQuestion].optionD} {" "}</button>
             </div>
 
-            <button>Next Question</button>
+            {currentQuestion == Questions.length-1 ?(
+                <button onClick={finishQuiz}> Finish Quiz</button>
+            ):
+            (
+                <button onClick={nextQuestion}>Next Question</button>
+            )}
+
+            
         </div>
     )
 }
