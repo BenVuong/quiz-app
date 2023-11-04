@@ -23,4 +23,14 @@ export const Questions = [
         optionD: "A King",
         answer: "A"
     }
+    ,
+    {
+        prompt: "What is Okabe's favorite drink?",
+        optionA: "Coke Zero",
+        optionB: "Boss Canned Coffee",
+        optionC: "Mountain Dew",
+        optionD: "Dr.Pepper",
+        answer: "D"
+    }
+   
 ]
