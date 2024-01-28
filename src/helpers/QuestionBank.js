@@ -32,5 +32,22 @@ export const Questions = [
         optionD: "Dr.Pepper",
         answer: "D"
     }
-   
-]
+    ,
+    {
+        prompt: "When the Future Gadget Lab memebers put a bannana in the phonewave, what happened?",
+        optionA:"The bannana vanished",
+        optionB: "The bannana turned into a gel-nanna",
+        optionC: "The bannana got burnt",
+        optionD: "Nothing happned",
+        answer: "B"
+    }
+    ,
+    {
+        prompt: "What was the original purpose of the phonewave?",
+        optionA: "a microwave that could be controlled remotely via a phone",
+        optionB: "a time machine",
+        optionC: "a weapon",
+        optionD: "a phone that used mircowave frequency",
+        answer: "A"
+    }
+] 

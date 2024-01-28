@@ -26,6 +26,10 @@
   cursor: pointer;
 }
 
+.Menu button:hover{
+  filter: brightness(85%)
+}
+
 .Quiz{
   width: 500px;
   height: 500px;
@@ -47,6 +51,14 @@
   font-size: 20px;
   cursor: pointer;
   align-items: center;
+}
+
+.Quiz button:hover{
+  filter: brightness(85%)
+}
+
+.Quiz button:focus{
+  filter: brightness(50%)
 }
   
   
