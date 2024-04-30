@@ -2,7 +2,7 @@ import React, {useContext} from "react";
 import { QuizContext} from "../helpers/Contexts";
 import { Questions } from '../helpers/QuestionBank';
 function EndScreen(){
-    const { score, setScore, setGameState } = useContext(QuizContext);
+    const { score, setScore, setGameState, questionBank } = useContext(QuizContext);
     const restartQuiz = () =>
     {
         setScore(0)
@@ -11,7 +11,7 @@ function EndScreen(){
     return (
         <div className="EndScreen">
             <h1>Quiz Finished</h1>
-            <h3>{score}/{Questions.length}</h3>
+            <h3>{score}/{questionBank.length}</h3>
             <button  onClick={restartQuiz}>
                 Restart
             </button>
