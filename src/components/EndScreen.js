@@ -1,6 +1,6 @@
 import React, {useContext} from "react";
 import { QuizContext} from "../helpers/Contexts";
-import { Questions } from '../helpers/QuestionBank';
+import "../App.css"
 function EndScreen(){
     const { score, setScore, setGameState, questionBank } = useContext(QuizContext);
     const restartQuiz = () =>
